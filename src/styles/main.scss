@@ -98,3 +98,12 @@ section {
 #servicos {
     // background-color: red;
 }
+
+#carousel_fotos {
+    .carousel-control-prev:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-control-next:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
