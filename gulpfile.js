@@ -50,9 +50,7 @@ function minifyCss() {
 
 // exports.default = gulp.series();
 exports.default = function () {
-    gulp.watch("./src/**/*.html", { ignoreInitial: false }, gulp.series(minifyHtml))
     gulp.watch("./src/styles/*.scss", { ignoreInitial: false }, gulp.series(compilaSass))
-    gulp.watch("./src/**/*.css", { ignoreInitial: false }, gulp.series(minifyCss))
 }
 
 exports.dist = gulp.series(minifyHtml, compilaSass, comprimeJavaScript, minifyCss, comprimeImg)

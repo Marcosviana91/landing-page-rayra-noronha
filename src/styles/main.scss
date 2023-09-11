@@ -19,18 +19,88 @@ $corE: #333333;
     font-family: 'Open Sans', sans-serif;
 }
 
-.title-font {
+body {
+    background-color: $cor5;
+}
+
+p {
+    text-indent: .5in;
+    text-align: justify;
+}
+
+.title-font,
+h1, h2, h3 {
     font-family: 'Alex Brush', cursive;
 }
 
-.nav-font {
+.nav-font,
+nav a {
     font-family: 'Montserrat', sans-serif;
 }
 
-.quotes-font {
+.quotes-font,
+blockquote {
     font-family: 'Great Vibes', cursive;
+    // font-size: 1.4em;
 }
 
 img {
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    height: 3em;
+    background-color: $cor4;
+}
+
+section {
+    border: 1px solid $cor2;
+}
+
+#whats_btn {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 128, 0, 0.33);
+    
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+    
+    transition: all .3s;
+    
+    cursor: pointer;
+
+    i {
+        position: relative;
+        left: 15%;
+        font-size: 4.5em;
+        color: rgba(255, 255, 255, 0.33);
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+        background-color: rgba(0, 128, 0, 1);
+
+        i {
+            color: white;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        height: 75px;
+        width: 75px;
+        
+        i {
+            font-size: 3.3em;
+        }
+    }
+}
+
+#servicos {
+    // background-color: red;
 }
