@@ -101,9 +101,10 @@ section {
 
 #carousel_fotos {
     .carousel-control-prev:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
     }
     .carousel-control-next:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
     }
+
 }
