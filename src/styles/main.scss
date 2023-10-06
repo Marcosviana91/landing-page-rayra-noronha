@@ -144,3 +144,16 @@ section:nth-child(even) {
         background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
     }
 }
+
+#youtube-video {
+    width: 100%;
+    height: 60vw;
+    @media (min-width: 640px) {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+footer * {
+    text-decoration: none;
+}
