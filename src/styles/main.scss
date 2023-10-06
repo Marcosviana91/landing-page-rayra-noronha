@@ -4,8 +4,8 @@ $cor3: #EC971F;
 $cor4: #F0AD4E;
 $cor5: #F7E896;
 
-$corA: #004F91;
-$corB: #D32F2F;
+$corA: #005091c0;
+$corB: #d32f2fc0;
 $corC: #007E5E;
 $corD: #F5F5F5;
 $corE: #333333;
@@ -20,7 +20,7 @@ $corE: #333333;
 }
 
 body {
-    background-color: $cor5;
+    // background-color: $cor5;
 }
 
 p {
@@ -56,6 +56,18 @@ section {
     border: 1px solid $cor2;
 }
 
+.bgA,
+.bgB {
+    border-radius: 15px;
+    padding: 8px;
+    color: white;
+}
+.bgA {
+    background-color: $corA;
+}
+.bgB {
+    background-color: $corB;
+}
 #whats_btn {
     height: 100px;
     width: 100px;
@@ -95,10 +107,32 @@ section {
     }
 }
 
-#servicos {
-    // background-color: red;
+section:nth-child(odd) {
+    background-color: $corA;
 }
 
+section:nth-child(even) {
+    background-color: $corB;
+}
+
+.section_bg {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 80vh;
+}
+.bg_reino-unido{
+    background-image: url(../images/parallax/bandeira-reino-unido.png);
+}
+.bg_alemanha{
+    background-image: url(../images/parallax/bandeira-alemanha.jpg);
+}
+.bg_escocia{
+    background-image: url(../images/parallax/bandeira-escocia.jpg);
+}
+.bg_holanda{
+    background-image: url(../images/parallax/bandeira-holanda.png);
+}
 #carousel_fotos {
     .carousel-control-prev:hover {
         background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
