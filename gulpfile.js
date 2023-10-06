@@ -9,7 +9,7 @@ const cssmin = require('gulp-cssmin');
 
 function comprimeImg() {
     return gulp
-        .src("src/images/*")
+        .src("src/images/**/*")
         .pipe(imageMin(""))
         .pipe(gulp.dest("dist/images"));
 }
