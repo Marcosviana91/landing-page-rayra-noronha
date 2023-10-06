@@ -133,6 +133,9 @@ section:nth-child(even) {
 .bg_holanda{
     background-image: url(../images/parallax/bandeira-holanda.png);
 }
+.bg_belgica{
+    background-image: url(../images/parallax/bandeira-belgica.jpg);
+}
 #carousel_fotos {
     .carousel-control-prev:hover {
         background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
@@ -140,10 +143,4 @@ section:nth-child(even) {
     .carousel-control-next:hover {
         background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
     }
-
-}
-
-footer {
-    position: relative;
-    bottom: 0px;
 }
