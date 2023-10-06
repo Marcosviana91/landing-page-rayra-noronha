@@ -29,7 +29,9 @@ p {
 }
 
 .title-font,
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,6 +43,13 @@ blockquote {
 img {
     width: 100%;
     max-width: 300px;
+}
+
+.fotos img {
+    max-height: 400px;
+    @media (max-width: 640px) {
+        max-width: 100%;
+    }
 }
 
 li {
@@ -62,23 +71,27 @@ section {
     padding: 8px;
     color: white;
 }
+
 .bgA {
     background-color: $corA;
 }
+
 .bgB {
     background-color: $corB;
 }
+
 #whats_btn {
     height: 100px;
     width: 100px;
     background-color: rgba(0, 128, 0, 0.33);
-    
+
     position: fixed;
     right: 2vw;
     bottom: 2vh;
-    
+
     transition: all .3s;
-    
+
+    z-index: 100;
     cursor: pointer;
 
     i {
@@ -87,7 +100,7 @@ section {
         font-size: 4.5em;
         color: rgba(255, 255, 255, 0.33);
     }
-    
+
     &:hover {
         transform: scale(1.1);
         background-color: rgba(0, 128, 0, 1);
@@ -96,11 +109,11 @@ section {
             color: white;
         }
     }
-    
+
     @media (max-width: 640px) {
         height: 75px;
         width: 75px;
-        
+
         i {
             font-size: 3.3em;
         }
@@ -121,33 +134,49 @@ section:nth-child(even) {
     background-position: center;
     min-height: 80vh;
 }
-.bg_reino-unido{
+
+.bg_reino-unido {
     background-image: url(../images/parallax/bandeira-reino-unido.png);
 }
-.bg_alemanha{
+
+.bg_alemanha {
     background-image: url(../images/parallax/bandeira-alemanha.jpg);
 }
-.bg_escocia{
+
+.bg_escocia {
     background-image: url(../images/parallax/bandeira-escocia.jpg);
 }
-.bg_holanda{
+
+.bg_holanda {
     background-image: url(../images/parallax/bandeira-holanda.png);
 }
-.bg_belgica{
+
+.bg_belgica {
     background-image: url(../images/parallax/bandeira-belgica.jpg);
 }
-#carousel_fotos {
-    .carousel-control-prev:hover {
-        background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
+
+.carousel-item {
+    height: calc(450px + 4em);
+    @media (max-width: 640px) {
+        height: 80vh;
     }
+}
+
+#carousel_fotos {
+
+    .carousel-control-prev:hover {
+        background: linear-gradient(180deg, transparent 10%, $cor4 50%, transparent);
+    }
+
     .carousel-control-next:hover {
-        background: linear-gradient(180deg, transparent 10% , $cor4 50%, transparent);
+        background: linear-gradient(180deg, transparent 10%, $cor4 50%, transparent);
     }
 }
 
 #youtube-video {
     width: 100%;
     height: 60vw;
+
     @media (min-width: 640px) {
         width: 640px;
         height: 360px;
